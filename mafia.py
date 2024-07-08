@@ -258,9 +258,7 @@ while True:
             embed.add_field(name="강제종료", value=maker)
             embed.add_field(name="출처", value=me)
             embed.set_thumbnail(url=client.user.avatar_url)
-            embed.set_footer(
-                icon_url="https://postfiles.pstatic.net/MjAxOTA0MThfMiAg/MDAxNTU1NTI1NTQzNTIz.0EsAcCWsfNB4yE7YlDVTASb5cE-O0yLZyXZBjV9WEoQg.beOMwtvVCGZpshta0L1f7PyTujElPUkMXK674-L2nPEg.PNG.gkje123/mapia.png",
-                text="팀베이비")
+            embed.set_footer(text="팀베이비")
             await message.channel.send(embed=embed)
 
         if message.content.startswith(prefix + "마피아생성") and not isinstance(message.channel, discord.abc.PrivateChannel):
